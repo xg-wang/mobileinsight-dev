@@ -29,9 +29,9 @@ SCRIPT
 
 
 $CLONE_REPOS = <<SCRIPT
-# Create MobileInsight dev folder at /home/vagrant/mi-dev
-mkdir /home/vagrant/mi-dev
-cd /home/vagrant/mi-dev
+# Create MobileInsight dev folder at /vagrant/mi-dev
+mkdir /vagrant/mi-dev
+cd /vagrant/mi-dev
 
 # Clone MobileInsight-core repo
 git clone https://github.com/xg-wang/mobileinsight-core.git
@@ -40,6 +40,8 @@ git clone https://github.com/xg-wang/mobileinsight-core.git
 git clone https://github.com/xg-wang/mobileinsight-mobile.git
 
 # Clone python-for-android repo
+mkdir /home/vagrant/mi-dev
+cd /home/vagrant/mi-dev
 git clone https://github.com/xg-wang/python-for-android.git
 
 SCRIPT
@@ -87,7 +89,7 @@ cd /home/vagrant/mi-dev/python-for-android
 sudo python setup.py install
 
 # Prepare MobileInsight Android app compilation
-cd /home/vagrant/mi-dev/mobileinsight-mobile
+cd /vagrant/mi-dev/mobileinsight-mobile
 
 # Make MobileInsight compilation config
 make config
@@ -108,7 +110,7 @@ SCRIPT
 
 $INSTALL_CORE = <<SCRIPT
 # Install MobileInsight-core and run example
-cd /home/vagrant/mi-dev/mobileinsight-core
+cd /vagrant/mi-dev/mobileinsight-core
 sudo ./install-ubuntu.sh
 
 SCRIPT

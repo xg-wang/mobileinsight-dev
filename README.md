@@ -1,6 +1,9 @@
 Automated Deployment for MobileInsight Development Environment
 ==========
 
+## Changes
+This is a customized version aiming at more seamless dev/build process.
+All working codes are under share folder where the `vagrant up` is called.
 
 ## Introduction
 
@@ -8,7 +11,7 @@ This repo contains a `Vagrantfile` for automated deployment for [MobileInsight](
 
 ## Quickstart
 
-Download this repo and put it the `Vagrantfile` under your development path, say `/path/to/dev`. Run `vagrant up` and install the virtual image (depending on the network and CPU speed, the installation may take half hour or longer.). 
+Download this repo and put it the `Vagrantfile` under your development path, say `/path/to/dev`. Run `vagrant up` and install the virtual image (depending on the network and CPU speed, the installation may take half hour or longer.).
 
 	cd /path/to/dev
 	wget https://github.com/mobile-insight/mobileinsight-dev/archive/v1.0.tar.gz
