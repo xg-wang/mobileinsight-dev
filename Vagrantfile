@@ -45,14 +45,6 @@ git clone https://github.com/xg-wang/python-for-android.git
 SCRIPT
 
 
-$INSTALL_CORE = <<SCRIPT
-# Install MobileInsight-core and run example
-cd /home/vagrant/mi-dev/mobileinsight-core
-sudo ./install-ubuntu.sh
-
-SCRIPT
-
-
 $COMPILE_APK = <<SCRIPT
 # Config Android SDK download script
 cat > /home/vagrant/android-sdk-installer.yml <<-EOF
@@ -112,6 +104,15 @@ make apk_debug
 cp MobileInsight-3.2.0-debug.apk /vagrant
 
 SCRIPT
+
+
+$INSTALL_CORE = <<SCRIPT
+# Install MobileInsight-core and run example
+cd /home/vagrant/mi-dev/mobileinsight-core
+sudo ./install-ubuntu.sh
+
+SCRIPT
+
 
 Vagrant.configure(2) do |config|
   config.vm.box = "bento/ubuntu-16.04"
