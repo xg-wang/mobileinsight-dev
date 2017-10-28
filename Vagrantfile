@@ -34,15 +34,15 @@ mkdir /vagrant/mi-dev
 cd /vagrant/mi-dev
 
 # Clone MobileInsight-core repo
-git clone https://github.com/xg-wang/mobileinsight-core.git
+git clone -b vis-proj https://github.com/xg-wang/mobileinsight-core.git
 
 # Clone MobileInsight-mobile repo
-git clone https://github.com/xg-wang/mobileinsight-mobile.git
+git clone -b vis-proj https://github.com/xg-wang/mobileinsight-mobile.git
 
 # Clone python-for-android repo
 mkdir /home/vagrant/mi-dev
 cd /home/vagrant/mi-dev
-git clone https://github.com/xg-wang/python-for-android.git
+git clone -b vis-proj https://github.com/xg-wang/python-for-android.git
 
 SCRIPT
 
