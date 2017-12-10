@@ -1,8 +1,8 @@
-diff --git a/python-for-android/pythonforandroid/recipes/mobileinsight/__init__.py b/python-for-android/pythonforandroid/recipes/mobileinsight/__init__.py
-index 317cbba..5cd960a 100644
---- a/python-for-android/pythonforandroid/recipes/mobileinsight/__init__.py
-+++ b/python-for-android/pythonforandroid/recipes/mobileinsight/__init__.py
-@@ -7,7 +7,7 @@ from os.path import exists, join, isdir, split
+diff --git a/pythonforandroid/recipes/mobileinsight/__init__.py b/pythonforandroid/recipes/mobileinsight/__init__.py
+index ad6e4ab..3c0adb0 100644
+--- a/pythonforandroid/recipes/mobileinsight/__init__.py
++++ b/pythonforandroid/recipes/mobileinsight/__init__.py
+@@ -7,13 +7,13 @@ from os.path import exists, join, isdir, split
  import sh
  import glob
  
@@ -11,3 +11,10 @@ index 317cbba..5cd960a 100644
  
  class MobileInsightRecipe(Recipe):
  
+     mi_git            = 'https://github.com/xg-wang/mobileinsight-core.git'
+     mi_branch         = 'vis-proj'
+-    local_src         = '/home/vagrant/mi-dev/mobileinsight-core'
++    local_src         = '/vagrant/mi-dev/mobileinsight-core'
+     version           = '2.5'
+     toolchain_version = 4.9          # default GCC toolchain version we try to use
+     depends           = ['python2']  # any other recipe names that must be built before this one
