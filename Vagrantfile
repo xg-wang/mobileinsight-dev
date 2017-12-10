@@ -103,7 +103,7 @@ make apk_debug
 
 # Copy MobileInsight apk to local folder
 # Please exit vagrant ssh shell and use adb to install
-cp MobileInsight-3.2.0-debug.apk /vagrant
+cp *.apk /vagrant
 
 SCRIPT
 
